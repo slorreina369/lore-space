@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #edeef6;
+    --secondary-color: #31343d;
+    --tertiary-color:#445876;
+    --fourth-color:#92cbcd;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding-right: 4em;
+}
+header h1{
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+    font-size: 3em;
+    padding: 0 1em 0 4em;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav ul li{
+    padding: 10px 15px;
+}
+header nav a{
+    color: var(--fourth-color);
+    text-decoration: none;
+    border-bottom: var(--fourth-color) solid .2em;
+    font-size: 2em;
+}
+.hero-filler{
+    background-image: url("./images/stock-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+    text-align: right;
+    vertical-align: bottom;
+
+}
+.hero-filler h2{
+    margin-top: 8em;
+    margin-right: 2em;
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+    font-size: 2em;
+    display: inline-block;
+    padding: 4px;
+}
+.work-projects{
+    float: right;
+}
+.wrapper{
+    display: table;
+    width: 100%;
+    padding-right: 4em;
+    border-spacing: 0 4em;
+}
+.wrapper > section{
+    display: table-row;
+    
+}
+.wrapper .title, .wrapper .section-body{
+    display: table-cell;
+    padding-left: 4em;
+}
+.wrapper .title{
+    padding-left: 5vw;
+    padding-right: 1vw;
+    border: var(--tertiary-color) solid 0;
+    border-right-width: .2em;
+    color: var(--tertiary-color);
+    text-align: end;
+    font-size: 2em;
+
+}
+.resume-project{
+    flex-basis: calc(50% - .5em);
+    background-size: cover;
+    flex-flow: column wrap;
+    height: 12em;
+    border:10px solid var(--fourth-color);
+    margin-bottom: .8em;
+    --variable-test: url("./images/variable.jpg");
+    background-image: linear-gradient(rgba(146, 203, 205, .8), rgba(146, 203, 205,.8)), var(--variable-test);
+
+}
+#work > .section-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.resume-project:first-child{
+    flex-basis: 100%;
+    height: 28em;
+}
+.work-content{
+    background-color: var(--fourth-color);
+    width: 8em;
+    padding: 10px;
+    display: block;
+    margin-top: 1em;
+
+}
+.work-content::first-line{
+    font-weight: bold;
+}
+.resume-project:hover{
+    background-image: var(--variable-test);
+}
+#contact-info address a{
+    text-decoration: none;
+    margin: 3vw;
+    color: var(--tertiary-color);
+    border-bottom: solid .2em;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em;
+}
+#contact-info address ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#run-buddy{
+    --variable-test: url("./images/hero-bg.jpg");
+    display: block;
+    text-decoration: none;
+}
+#surf-report{
+    --variable-test: url("./images/surfing.jpg");
+}
+#led-wall{
+    --variable-test: url("./images/video-wall-content.jpg");
+}
+#calculator{
+    --variable-test: url("./images/net-price-calculators.jpg");
+}
+#pastel-puzzels{
+    --variable-test:url("./images/59-593507_pastel-color-puzzle-pieces.jpg");
+}
+@media screen and (max-width:980px) {
+    header nav a{
+        font-size: 1.5em;
+    }
+    .wrapper, .wrapper > section, .wrapper .title, .wrapper .section-body{
+        display: block;
+    }
+    .wrapper .title{
+        border-right-width: 0;
+        border-bottom-width: .2em;
+        text-align: left;
+        padding-left: 2em;
+    }
+    #work > .section-body{
+        display: block;
+        padding-top: 2em;
+    }
+    #contact-info address a{
+        margin: 3vw;
+    }
+
+}
+@media screen and (max-width:575px){
+    #contact-info address a{
+        margin: 0;
+        padding-top: 2vw;
+    }
+    
+}
