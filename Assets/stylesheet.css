@@ -43,6 +43,10 @@ header nav a{
     border-bottom: var(--fourth-color) solid .2em;
     font-size: 2em;
 }
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+}
 .hero-filler{
     background-image: url("./images/yosemite.jpg");
     background-size: cover;
@@ -137,11 +141,6 @@ header nav a{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-#run-buddy{
-    --variable-test: url("./images/hero-bg.jpg");
-    display: block;
-    text-decoration: none;
 }
 #surf-report{
     --variable-test: url("./images/surfing.jpg");
