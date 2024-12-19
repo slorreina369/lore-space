@@ -3,9 +3,9 @@
 }
 :root {
   --primary-color: #edeef6;
-  --secondary-color: #31343d;
+  --secondary-color: #3a5d8c;
   --tertiary-color: #445876;
-  --fourth-color: #92cbcd;
+  --fourth-color: #80bdf2;
 }
 body {
   font-family: "Times New Roman", Times, serif;
@@ -117,7 +117,7 @@ a:active {
 }
 .work-content {
   background-color: var(--fourth-color);
-  width: 8em;
+  width: 14em;
   padding: 10px;
   display: block;
   margin-top: 1em;
